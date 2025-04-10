@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12rem;
+}
+
+.header nav ul li a {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white-transparent);
+  transition: 0.3s ease;
+}
+
+.header nav ul li a:hover {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+/* not active links should be less white*/
