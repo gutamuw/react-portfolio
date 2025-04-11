@@ -1,8 +1,9 @@
 .wrapper {
-  padding: 0 2rem 0;
+  height: 100vh;
+  padding: 7rem 2rem 2rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 1rem;
 }
 
@@ -17,17 +18,45 @@
 }
 
 .about-section {
-  grid-column: 1 / span 2;
+  padding: 2rem;
+  grid-column: 1 / span 3;
   grid-row: 1 / span 2;
 }
 
+.about-section p {
+  color: var(--white-transparent);
+  line-height: 1.5;
+}
+
+.about-section p:last-child {
+  margin-top: 1rem;
+}
+
+.about-section h1 {
+  font-size: 4rem;
+}
+
 .skills-section {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.skills-section ul {
+  color: var(--white-transparent);
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.education-section {
   grid-column: 3 / span 1;
-  grid-row: 1 / span 2;
+  grid-row: 3 / span 1;
 }
 
 .projects-section {
   grid-column: 1 / span 3;
+  grid-row: 4 / span 1;
 }
 
 .img-section {
@@ -46,4 +75,22 @@
   background-color: var(--black-transparent);
   border-radius: 50%;
   border: 1px solid #ffffff20;
+}
+
+.logo-slider-section {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 4 / span 3;
+  grid-row: 4 / span 1;
+  overflow: hidden;
+}
+
+.logo-slider {
+}
+
+svg {
+  color: var(--green);
 }

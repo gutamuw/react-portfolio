@@ -41,8 +41,8 @@ function AnimatedBackground() {
                 repeatType: "reverse",
                 ease: "easeInOut",
               },
-              translateX: { type: "spring", stiffness: 100, damping: 20 },
-              translateY: { type: "spring", stiffness: 100, damping: 20 },
+              translateX: { stiffness: 300, damping: 15 },
+              translateY: {  stiffness: 300, damping: 15 },
             }}
           ></motion.path>
         </g>
