@@ -8,11 +8,29 @@ import { faHtml5, faCss3Alt, faJs, faReact, faPhp, faWordpress } from '@fortawes
 function AboutSection() {
     return <>
         <div className="wrapper">
-        <motion.div className="about-section"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ type: "spring", stiffness: 200, duration: 1, delay: 0.5 }}>
-            <h1>About Me.</h1>
+        <div className="about-section">
+            <h1>
+                      {Array.from("ABOUT ME.").map((letter, index) => (
+                        <motion.span
+                          key={index}
+                          style={{ display: "inline-block", cursoer: "pointer" }}
+                          initial={{ opacity: 0, y: -20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 200,
+                            damping: 20,
+                            delay: index * 0.1,
+                          }}
+                        >
+                          {letter === " " ? "\u00A0" : letter}
+                        </motion.span>
+                      ))}
+                    </h1>
+            <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 200, duration: 1, delay: 1 }}>
             <p>
                 I am a passionate frontend developer with a keen interest in creating
                 user-friendly and visually appealing web applications. My goal is to
@@ -24,11 +42,12 @@ function AboutSection() {
                 to learn new technologies and frameworks to stay up-to-date with the
                 latest trends in web development.
             </p>
-        </motion.div>
+            </motion.div>
+        </div>
         <motion.div className="skills-section bento-box"
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ type: "spring", stiffness: 200, duration: 1, delay: 1 }}>
+        transition={{ type: "spring", stiffness: 200, duration: 1, delay: 1.5 }}>
             <h2>Skills</h2>
             <ul>
                 <li>HTML</li>
@@ -41,67 +60,62 @@ function AboutSection() {
                 <li>Version Control (Git)</li>
             </ul>
         </motion.div>
-        <motion.div className="projects-section bento-box"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ type: "spring", stiffness: 200, duration: 1, delay: 2 }}>
-            <h2>Projects</h2>
-            <ul>
-                <li>Portfolio Website</li>
-                <li>Weather App</li>
-                <li>Todo List Application</li>
-                <li>E-commerce Website</li>
-            </ul>
-        </motion.div>
         <motion.div className="education-section bento-box" 
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ type: "spring", stiffness: 200, duration: 1, delay: 1.5 }}>
+        transition={{ type: "spring", stiffness: 200, duration: 1, delay: 2 }}>
         <h2>Education</h2>
         <ul>
-            <li>Portfolio Website</li>
-            <li>Weather App</li>
-            <li>Todo List Application</li>
+            <li><strong>Digital Media</strong> - Stockholm University</li>
+            <li><strong>Frontend Developer</strong> - Medieinstitutet</li>
         </ul>
         </motion.div>    
-        <motion.div className="img-section"
-        initial={{ opacity: 0}}
-        animate={{ opacity: 1}}
-        transition={{ duration: 3, delay: 2.5 }}>
-            <motion.img src="/src/assets/ludde-transparent(1).png" alt="ludde" 
-            initial={{ y: 0 }}
-            animate={{ y: [-20, 20, -20] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            />
+        <motion.div
+        className="media-section"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 3, delay: 1 }}
+        >
+            <div className="img-section">
+                <motion.img
+                src="/src/assets/ludde-transparent(1).png"
+                alt="ludde"
+                initial={{ y: 0 }}
+                animate={{ y: [-20, 20, -20] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                />
+            </div>
+            <div className="logo-slider-section">
+                <h2>Techniques I Use</h2>
+                <Slider
+                className="logo-slider"
+                width="150px"
+                duration={20}
+                pauseOnHover={true}
+                blurBorders={false}
+                blurBorderColor={'#fff'}
+                >
+                <Slider.Slide>
+                    <FontAwesomeIcon icon={faHtml5} title="HTML" size="3x" />
+                </Slider.Slide>
+                <Slider.Slide>
+                    <FontAwesomeIcon icon={faCss3Alt} title="CSS" size="3x" />
+                </Slider.Slide>
+                <Slider.Slide>
+                    <FontAwesomeIcon icon={faJs} title="JavaScript" size="3x" />
+                </Slider.Slide>
+                <Slider.Slide>
+                    <FontAwesomeIcon icon={faReact} title="React" size="3x" />
+                </Slider.Slide>
+                <Slider.Slide>
+                    <FontAwesomeIcon icon={faPhp} title="PHP" size="3x" />
+                </Slider.Slide>
+                <Slider.Slide>
+                    <FontAwesomeIcon icon={faWordpress} title="WordPress" size="3x" />
+                </Slider.Slide>
+                </Slider>
+            </div>
         </motion.div>
-        <div className="logo-slider-section">
-    <h2>Techniques I Use</h2>
-    <Slider className="logo-slider"
-    width="150px"
-    duration={20}
-    pauseOnHover={true}
-    blurBorders={false}
-    blurBorderColor={'#fff'}>
-        <Slider.Slide>
-            <FontAwesomeIcon icon={faHtml5} title="HTML" size="3x" />
-        </Slider.Slide>
-        <Slider.Slide>
-            <FontAwesomeIcon icon={faCss3Alt} title="CSS" size="3x" />
-        </Slider.Slide>
-        <Slider.Slide>
-            <FontAwesomeIcon icon={faJs} title="JavaScript" size="3x" />
-        </Slider.Slide>
-        <Slider.Slide>
-            <FontAwesomeIcon icon={faReact} title="React" size="3x" />
-        </Slider.Slide>
-        <Slider.Slide>
-            <FontAwesomeIcon icon={faPhp} title="PHP" size="3x" />
-        </Slider.Slide>
-        <Slider.Slide>
-            <FontAwesomeIcon icon={faWordpress} title="WordPress" size="3x" />
-        </Slider.Slide>
-    </Slider>
-</div>
         </div>
     </>
 }

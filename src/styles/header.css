@@ -18,7 +18,7 @@
 .header nav ul {
   list-style: none;
   display: flex;
-  gap: 12rem;
+  gap: clamp(5rem, 10vw, 12rem);
 }
 
 .header nav ul li a {
@@ -37,4 +37,9 @@
   text-underline-offset: 1rem;
 }
 
-/* not active links should be less white*/
+/* active link in header has the hover style */
+.header nav ul li a:focus {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}

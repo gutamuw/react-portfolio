@@ -3,6 +3,8 @@ import '../styles/header.css';
 import Button from "./Button.jsx";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (
@@ -21,7 +23,16 @@ function Header() {
           ))}
         </ul>
       </nav>
-      <Button text="Download Resume" onClick={() => alert('Button clicked!')} variant="primary" />
+      <Button
+  text={
+    <>
+      <FontAwesomeIcon icon={faDownload} style={{ marginRight: "0.5rem" }} />
+      Download Resume
+    </>
+  }
+  onClick={() => window.open("/CV2025.pdf", "_blank")}
+  variant="primary"
+/>
     </header>
   );
 }

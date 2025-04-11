@@ -5,9 +5,10 @@ import {
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "../styles/hero.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -76,14 +77,16 @@ function HeroSection() {
           <FontAwesomeIcon icon={faInstagram} />
         </a>
       </motion.div>
+      <Link to="/about">
       <motion.div
         className="scroll-down"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 200, duration: 1, delay: 2.5 }}
       >
-        <FontAwesomeIcon icon={faChevronDown} />
+        <FontAwesomeIcon icon={faChevronRight} />
       </motion.div>
+      </Link>
     </div>
   );
 }

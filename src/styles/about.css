@@ -3,7 +3,7 @@
   padding: 7rem 2rem 2rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
   gap: 1rem;
 }
 
@@ -11,21 +11,23 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: clamp(1rem, 2vw, 2rem);
   background-color: var(--black-transparent);
   border-radius: 8px;
   border: 1px solid #ffffff20;
 }
 
 .about-section {
-  padding: 2rem;
   grid-column: 1 / span 3;
-  grid-row: 1 / span 1;
+  grid-row: 1 / span 2;
+  max-width: 80ch;
 }
 
 .about-section p {
   color: var(--white-transparent);
   line-height: 1.5;
+  font-weight: 200;
+  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 .about-section p:last-child {
@@ -33,7 +35,7 @@
 }
 
 .about-section h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 6rem);
 }
 
 .skills-section {
@@ -54,23 +56,34 @@
   grid-row: 3 / span 1;
 }
 
-.projects-section {
-  grid-column: 1 / span 3;
-  grid-row: 4 / span 1;
+.education-section ul {
+  color: var(--white-transparent);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.media-section {
+  grid-column: 4 / span 3;
+  grid-row: 1 / span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .img-section {
-  grid-column: 4 / span 3;
-  grid-row: 1 / span 3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .img-section img {
-  max-height: 500px;
-  width: 500px;
-  height: 100%;
+  aspect-ratio: 1 / 1; /* Ensures the image is always a square */
+  max-width: 450px;
+  width: 100%;
+  max-height: 450px;
+  height: auto; /* Adjust height automatically to maintain aspect ratio */
   object-fit: cover;
   background-color: var(--black-transparent);
   border-radius: 50%;
@@ -83,12 +96,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-column: 4 / span 3;
-  grid-row: 4 / span 1;
   overflow: hidden;
-}
-
-.logo-slider {
 }
 
 svg {
