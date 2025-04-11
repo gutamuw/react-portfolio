@@ -18,6 +18,8 @@
   --white: #fafaf9;
   --black: #1c1917;
   --white-transparent: rgba(250, 250, 249, 0.7);
+  --black-transparent: #1c1917ee;
+  --green-transparent: #00604570;
 }
 
 h1,
