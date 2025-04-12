@@ -11,25 +11,22 @@
   height: 100vh; /* Adjust for header height */
 }
 
-.hero-content {
-}
-
 .hero-section h1 {
-  font-size: 10rem;
+  font-size: clamp(2rem, 9vw, 10rem);
   text-align: center;
   color: var(--white);
 }
 
 .hero-section h3 {
   color: var(--white-transparent);
-  padding-left: 0.6rem;
-  font-size: 2rem;
+  padding-left: 1%;
+  font-size: clamp(0.5rem, 4vw, 2rem);
   font-weight: 200;
-  margin-bottom: -3rem;
+  margin-bottom: -4%;
 }
 
 .hero-section h1 .dot {
-  color: var(--green); /* Use your green color variable */
+  color: var(--green);
 }
 
 .social-icons {
@@ -71,8 +68,7 @@
   height: 100%;
   background-color: var(--black-transparent);
   background-image: linear-gradient(to right, #3a3a3a15 1px, transparent 1px),
-    /* Slightly lighter grid lines */
-      linear-gradient(to bottom, #3a3a3a15 1px, transparent 1px);
+    linear-gradient(to bottom, #3a3a3a15 1px, transparent 1px);
   background-size: 6rem 4rem;
 }
 

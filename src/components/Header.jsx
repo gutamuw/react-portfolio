@@ -1,12 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
+import { NavLink } from "react-router-dom";
 import '../styles/header.css'; 
 import Button from "./Button.jsx";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
+  const [isOpen, toggleIsOpen] = useState(false);
+
   return (
     <header className="header">
       <h1>Logo.</h1>
@@ -18,7 +21,12 @@ function Header() {
             whileHover={{ scale: 1.1, color: "#006045" }}
             transition={{ type: "spring", stiffness: 200 }}
           >
-            <Link to={link === "Home" ? "/" : `/${link.toLowerCase()}`}>{link}</Link>
+            <NavLink 
+            to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
+            className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {link}
+            </NavLink>
           </motion.li>
           ))}
         </ul>
@@ -33,6 +41,28 @@ function Header() {
   onClick={() => window.open("/CV2025.pdf", "_blank")}
   variant="primary"
 />
+    <div className={`hamburger ${isOpen ? "active" : "" }`} onClick={() => toggleIsOpen(!isOpen)}>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+      </div>
+      <AnimatePresence>
+      {isOpen && (
+        <motion.div 
+        className="dropdown-menu"
+        initial={{ opacity: 0, y: -200 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -200 }}
+        transition={{ duration: 0.3 }}>
+          {["Home", "About", "Portfolio", "Contact"].map((link, index) => (
+            <Link key={index} to={link === "Home" ? "/" : `/${link.toLowerCase()}`} onClick={() => toggleIsOpen(false)}>
+              {link}
+            </Link>
+          ))}
+          
+        </motion.div>
+      )}
+      </AnimatePresence>
     </header>
   );
 }
