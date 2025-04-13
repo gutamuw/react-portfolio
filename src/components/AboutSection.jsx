@@ -27,10 +27,7 @@ function AboutSection() {
                         </motion.span>
                       ))}
                     </h1>
-            <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ type: "spring", stiffness: 200, duration: 1, delay: 1 }}>
+            <motion.div>
             <p>
                 I am a passionate frontend developer with a keen interest in creating
                 user-friendly and visually appealing web applications. My goal is to

@@ -5,6 +5,8 @@ import Header from './components/Header.jsx'
 import HeroSection from './components/HeroSection.jsx'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
+import Portfolio from './components/Portfolio.jsx'
+import Contact from './components/Contact.jsx'
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -39,7 +41,7 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/services"
+          path="/portfolio"
           element={
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -47,7 +49,7 @@ function AnimatedRoutes() {
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.5 }}
             >
-              <div>Services</div>
+              <Portfolio />
             </motion.div>
           }
         />
@@ -60,7 +62,7 @@ function AnimatedRoutes() {
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.5 }}
             >
-              <div>Contact</div>
+              <Contact/>
             </motion.div>
           }
         />

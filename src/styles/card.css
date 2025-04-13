@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+  background-color: var(--black);
+  border: 1px solid #ffffff20;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.card ul {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.card ul li svg {
+  color: var(--white-transparent);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+p {
+  color: var(--white-transparent);
+}
+
+.card a {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.card a svg {
+  color: var(--white-transparent);
+}

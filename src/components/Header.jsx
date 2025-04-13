@@ -1,9 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import '../styles/header.css'; 
 import Button from "./Button.jsx";
 import {  motion } from "framer-motion";
-import { Link } from "react-router-dom"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import HamburgerMenu from "./HamburgerMenu.jsx";
