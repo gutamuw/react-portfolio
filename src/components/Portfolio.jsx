@@ -9,7 +9,7 @@ import { faJs, faWordpress, faPhp, faHtml5, faCss3 } from "@fortawesome/free-bra
 function Portfolio() {
   return (
     <div className="portfolio-section wrapper">
-      <h1>Portfolio</h1>
+      <h1>Portfolio.</h1>
       <div>
         <p>
           Here are some of my recent projects that showcase my skills and
@@ -21,7 +21,7 @@ function Portfolio() {
         className="portfolio-cards"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ type: "spring", stiffness: 200, duration: 1, delay: 1 }}
+        transition={{ type: "spring", stiffness: 200, duration: 1, delay: 0.5 }}
       >
         <Card 
           title={"Project 1"}
