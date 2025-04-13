@@ -8,7 +8,7 @@ import { faJs, faWordpress, faPhp, faHtml5, faCss3 } from "@fortawesome/free-bra
 
 function Portfolio() {
   return (
-    <div className="portfolio-section wrapper">
+    <div className="portfolio-section">
       <h1>Portfolio.</h1>
       <div>
         <p>
