@@ -10,7 +10,7 @@ import HamburgerMenu from "./HamburgerMenu.jsx";
 function Header() {
   return (
     <header className="header">
-      <h1>Logo.</h1>
+      <h1>Elverskog.</h1>
       <nav>
         <ul>
           {["Home", "About", "Portfolio", "Contact"].map((link, index) => (
