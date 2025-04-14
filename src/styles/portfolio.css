@@ -4,6 +4,7 @@
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  max-width: 970px;
 }
 
 .portfolio-section h1 {
@@ -18,7 +19,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 8rem 0 2rem;
+  padding: 8rem 2rem 2rem;
 }
 
 @media (max-width: 1050px) {

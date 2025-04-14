@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-function Card({ title, description, techUsed, imageUrl, link }) {
+function Card({ title, description, techUsed, imageUrl, link, category }) {
   return (
     <motion.div className="card" whileTap={{ scale: 0.95 }}>
       <div className="card-image-wrapper">
@@ -23,6 +23,8 @@ function Card({ title, description, techUsed, imageUrl, link }) {
         <a href={link} target="_blank" rel="noopener noreferrer" className="card-link">
           <FontAwesomeIcon icon={faExternalLinkAlt} size="lg" />
         </a>
+        
+        { category && <span id="jobCategory">{category}</span> }
       </div>
     </motion.div>
   );

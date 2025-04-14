@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import "../styles/portfolio.css";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJs, faWordpress, faPhp, faHtml5, faCss3 } from "@fortawesome/free-brands-svg-icons";
+import { faJs, faWordpress, faPhp, faHtml5, faCss3, faNodeJs} from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 
 function Portfolio() {
@@ -26,9 +27,9 @@ function Portfolio() {
         <Card 
           title={"Älvkarleby"}
           techUsed={[
+            <FontAwesomeIcon icon={faPhp} />,
             <FontAwesomeIcon icon={faJs} />,
             <FontAwesomeIcon icon={faWordpress} />,
-            <FontAwesomeIcon icon={faPhp} />,
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
             
@@ -36,6 +37,7 @@ function Portfolio() {
           description={"Website project"}
           imageUrl={"/alvkarleby-screenshot.png"}
           link={"https://www.alvkarlebybegravningsbyra.se/"}
+          category={"Work"}
         />
         <Card
           title={"Elagent.com"}
@@ -47,13 +49,14 @@ function Portfolio() {
           description={"Website project & SEO"}
           imageUrl={"/elagent-screenshot.png"}
           link={"https://elagent.com/"}
+          category={"Freelance"}
         />
         <Card
           title={"Sandstedts.se"}
           techUsed={[
+            <FontAwesomeIcon icon={faPhp} />,
             <FontAwesomeIcon icon={faJs} />,
             <FontAwesomeIcon icon={faWordpress} />,
-            <FontAwesomeIcon icon={faPhp} />,
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
             
@@ -61,6 +64,7 @@ function Portfolio() {
           description={"Website project"}
           imageUrl={"/sandstedts-screenshot.png"}
           link={"https://www.sandstedt.se/"}
+          category={"Work"}
         />
         <Card
           title={"Rogerelverskog.se"}
@@ -73,6 +77,7 @@ function Portfolio() {
           description={"Website project"}
           imageUrl={"/roger-screenshot.png"}
           link={"https://rogerelverskog.se/"}
+          category={"Freelance"}
         />
         <Card
           title={"Profile gallery"}
@@ -80,11 +85,13 @@ function Portfolio() {
             <FontAwesomeIcon icon={faJs} />,
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
+            <FontAwesomeIcon icon={faNodeJs} />,
             
           ]}
           description={"Fetch API"}
           imageUrl={"/profile-gallery-screenshot.JPG"}
           link={"https://github.com/gutamuw/profile-gallery"}
+          category={"Personal"}
         />
         <Card
           title={"TheChat"}
@@ -92,11 +99,13 @@ function Portfolio() {
             <FontAwesomeIcon icon={faJs} />,
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
-            
+            <FontAwesomeIcon icon={faDatabase} />,
+            <FontAwesomeIcon icon={faNodeJs} />,
           ]}
           description={"API & WebSocket"}
           imageUrl={"/theChat-screenshot.JPG"}
           link={"https://github.com/gutamuw/theChat"}
+          category={"Personal"}
         />
       </motion.div>
       
