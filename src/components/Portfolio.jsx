@@ -24,7 +24,7 @@ function Portfolio() {
         transition={{ type: "spring", stiffness: 200, duration: 1, delay: 0.5 }}
       >
         <Card 
-          title={"Project 1"}
+          title={"Älvkarleby"}
           techUsed={[
             <FontAwesomeIcon icon={faJs} />,
             <FontAwesomeIcon icon={faWordpress} />,
@@ -33,26 +33,23 @@ function Portfolio() {
             <FontAwesomeIcon icon={faCss3} />,
             
           ]}
-          description={"Description of project 1"}
-          imageUrl={"https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
-          link={"#"}
+          description={"Website project"}
+          imageUrl={"/alvkarleby-screenshot.png"}
+          link={"https://www.alvkarlebybegravningsbyra.se/"}
         />
         <Card
-          title={"Project 2"}
+          title={"Elagent.com"}
           techUsed={[
-            <FontAwesomeIcon icon={faJs} />,
             <FontAwesomeIcon icon={faWordpress} />,
-            <FontAwesomeIcon icon={faPhp} />,
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
-            
           ]}
-          description={"Description of project 2"}
-          imageUrl={"https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
-          link={"#"}
+          description={"Website project & SEO"}
+          imageUrl={"/elagent-screenshot.png"}
+          link={"https://elagent.com/"}
         />
         <Card
-          title={"Project 3"}
+          title={"Sandstedts.se"}
           techUsed={[
             <FontAwesomeIcon icon={faJs} />,
             <FontAwesomeIcon icon={faWordpress} />,
@@ -61,23 +58,21 @@ function Portfolio() {
             <FontAwesomeIcon icon={faCss3} />,
             
           ]}
-          description={"Description of project 3"}
-          imageUrl={"https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
-          link={"#"}
+          description={"Website project"}
+          imageUrl={"/sandstedts-screenshot.png"}
+          link={"https://www.sandstedt.se/"}
         />
         <Card
-          title={"Project 3"}
+          title={"Rogerelverskog.se"}
           techUsed={[
-            <FontAwesomeIcon icon={faJs} />,
             <FontAwesomeIcon icon={faWordpress} />,
-            <FontAwesomeIcon icon={faPhp} />,
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
             
           ]}
-          description={"Description of project 3"}
-          imageUrl={"https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
-          link={"#"}
+          description={"Website project"}
+          imageUrl={"/roger-screenshot.png"}
+          link={"https://rogerelverskog.se/"}
         />
       </motion.div>
       
