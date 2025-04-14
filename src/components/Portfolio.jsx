@@ -74,6 +74,30 @@ function Portfolio() {
           imageUrl={"/roger-screenshot.png"}
           link={"https://rogerelverskog.se/"}
         />
+        <Card
+          title={"Profile gallery"}
+          techUsed={[
+            <FontAwesomeIcon icon={faJs} />,
+            <FontAwesomeIcon icon={faHtml5} />,
+            <FontAwesomeIcon icon={faCss3} />,
+            
+          ]}
+          description={"Fetch API"}
+          imageUrl={"/profile-gallery-screenshot.JPG"}
+          link={"https://github.com/gutamuw/profile-gallery"}
+        />
+        <Card
+          title={"TheChat"}
+          techUsed={[
+            <FontAwesomeIcon icon={faJs} />,
+            <FontAwesomeIcon icon={faHtml5} />,
+            <FontAwesomeIcon icon={faCss3} />,
+            
+          ]}
+          description={"API & WebSocket"}
+          imageUrl={"/theChat-screenshot.JPG"}
+          link={"https://github.com/gutamuw/theChat"}
+        />
       </motion.div>
       
     </div>
