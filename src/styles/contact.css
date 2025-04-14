@@ -5,13 +5,14 @@
   align-items: center;
   gap: 2rem;
   text-align: center;
+  min-height: 100vh;
+  min-height: 100svh;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: 1rem;
 }
 
@@ -20,12 +21,12 @@
   text-decoration: none;
 }
 
-.contact-info svg {
+.contact-info a svg {
   margin-right: 0.5rem;
   font-size: 30px;
 }
 
-.social-links svg:last-child {
+.social-links a:last-child svg {
   margin-right: 0;
 }
 

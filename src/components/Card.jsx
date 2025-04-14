@@ -23,7 +23,6 @@ function Card({ title, description, techUsed, imageUrl, link, category }) {
         <a href={link} target="_blank" rel="noopener noreferrer" className="card-link">
           <FontAwesomeIcon icon={faExternalLinkAlt} size="lg" />
         </a>
-        
         { category && <span id="jobCategory">{category}</span> }
       </div>
     </motion.div>

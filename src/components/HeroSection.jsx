@@ -59,18 +59,18 @@ function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 200, duration: 1, delay: 2 }}
       >
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/gutamuw" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/ludde-elverskog/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/ludvigelverskog/"
           target="_blank"
           rel="noopener noreferrer"
         >

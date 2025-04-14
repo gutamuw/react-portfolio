@@ -15,9 +15,15 @@ function Contact() {
             <a href="phone:0767746292"><FontAwesomeIcon icon={faPhone} className="icon" />076-7746292</a>
             <h2>Find me on</h2>
             <div className="social-links">
-            <FontAwesomeIcon icon={faGithub} className="icon" />
-            <FontAwesomeIcon icon={faLinkedin} className="icon" />
-            <FontAwesomeIcon icon={faInstagram} className="icon" />
+                <a href="https://github.com/gutamuw" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} className="icon" />
+                </a>
+                <a href="https://www.linkedin.com/in/ludde-elverskog/" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} className="icon" />
+                </a>
+                <a href="https://www.instagram.com/ludvigelverskog/" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faInstagram} className="icon" />
+                </a>
             </div>
         </div>
        </div>
