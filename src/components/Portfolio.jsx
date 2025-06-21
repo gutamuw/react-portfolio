@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "../styles/portfolio.css";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJs, faWordpress, faPhp, faHtml5, faCss3, faNodeJs} from "@fortawesome/free-brands-svg-icons";
+import { faJs, faWordpress, faPhp, faHtml5, faCss3, faNodeJs, faReact} from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -105,6 +105,18 @@ function Portfolio() {
           description={"API & WebSocket"}
           imageUrl={"/theChat-screenshot.JPG"}
           link={"https://github.com/gutamuw/theChat"}
+          category={"Personal"}
+        />
+        <Card
+          title={"Djurappen"}
+          techUsed={[
+            <FontAwesomeIcon icon={faReact} />,
+            <FontAwesomeIcon icon={faHtml5} />,
+            <FontAwesomeIcon icon={faCss3} />,
+          ]}
+          description={"React, API & Framer Motion"}
+          imageUrl={"/djurappen.JPG"}
+          link={"https://github.com/gutamuw/animalFeeder"}
           category={"Personal"}
         />
       </motion.div>
