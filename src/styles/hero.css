@@ -79,3 +79,9 @@
   filter: blur(80px);
   -webkit-filter: blur(80px);
 }
+
+@supports (-webkit-backdrop-filter: none) and (not (backdrop-filter: none)) {
+  .background svg {
+    display: none;
+  }
+}
