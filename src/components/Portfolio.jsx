@@ -119,6 +119,33 @@ function Portfolio() {
           link={"https://github.com/gutamuw/animalFeeder"}
           category={"Personal"}
         />
+        <Card
+          title={"Halldoffs.se"}
+          techUsed={[
+            <FontAwesomeIcon icon={faPhp} />,
+            <FontAwesomeIcon icon={faJs} />,
+            <FontAwesomeIcon icon={faWordpress} />,
+            <FontAwesomeIcon icon={faHtml5} />,
+            <FontAwesomeIcon icon={faCss3} />,
+            
+          ]}
+          description={"Website project"}
+          imageUrl={"/halldoffs-screenshot.png"}
+          link={"https://www.halldoffs.se/"}
+          category={"Work"}
+        />
+      <Card
+          title={"What Todo"}
+          techUsed={[
+            <FontAwesomeIcon icon={faReact} />,
+            <FontAwesomeIcon icon={faHtml5} />,
+            <FontAwesomeIcon icon={faCss3} />,
+          ]}
+          description={"React & Framer Motion"}
+          imageUrl={"/what-todo.JPG"}
+          link={"https://github.com/gutamuw/what-todo"}
+          category={"Personal"}
+        />
       </motion.div>
       
     </div>
