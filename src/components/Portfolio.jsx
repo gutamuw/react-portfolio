@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "../styles/portfolio.css";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJs, faWordpress, faPhp, faHtml5, faCss3, faNodeJs, faReact} from "@fortawesome/free-brands-svg-icons";
+import { faJs, faWordpress, faPhp, faHtml5, faCss3, faNodeJs, faReact, faSass} from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -112,7 +112,7 @@ function Portfolio() {
           techUsed={[
             <FontAwesomeIcon icon={faReact} />,
             <FontAwesomeIcon icon={faHtml5} />,
-            <FontAwesomeIcon icon={faCss3} />,
+            <FontAwesomeIcon icon={faSass} />,
           ]}
           description={"React, API & Framer Motion"}
           imageUrl={"/djurappen.JPG"}
