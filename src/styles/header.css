@@ -29,6 +29,7 @@
   text-transform: uppercase;
   color: var(--white-transparent);
   transition: 0.3s ease;
+  text-underline-offset: 1rem;
 }
 
 .header nav ul li a:hover {
