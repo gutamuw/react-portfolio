@@ -1,5 +1,3 @@
-import React from "react";
-import { motion } from "framer-motion";
 import "../styles/contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";

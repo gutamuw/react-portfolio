@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import '../styles/header.css'; 
 import Button from "./Button.jsx";

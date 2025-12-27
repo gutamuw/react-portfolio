@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/about.css";
 import { motion } from "framer-motion";
 import Slider from 'react-infinite-logo-slider'

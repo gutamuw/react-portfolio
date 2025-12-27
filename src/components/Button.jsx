@@ -1,4 +1,3 @@
-import React from "react";
 import '../styles/buttons.css';
 
 function Button({ text, onClick, variant = 'primary' }) {
