@@ -38,6 +38,24 @@ function Portfolio() {
           link={"https://www.alvkarlebybegravningsbyra.se/"}
           category={"Work"}
         />
+
+        <Card 
+        title={"Livsarkivet.se"}
+        techUsed={[
+          <FontAwesomeIcon icon={faPhp} />,
+          <FontAwesomeIcon icon={faJs} />,
+          <FontAwesomeIcon icon={faWordpress} />,
+          <FontAwesomeIcon icon={faHtml5} />,
+          <FontAwesomeIcon icon={faCss3} />,
+          
+        ]}
+        description={"Website project"}
+        imageUrl={"/livsarkivet.png"}
+        link={"https://www.livsarkivet.se/"}
+        category={"Work"}
+        
+        />
+
         <Card
           title={"Elagent.com"}
           techUsed={[
