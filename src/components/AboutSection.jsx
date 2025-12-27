@@ -75,7 +75,7 @@ function AboutSection() {
         >
             <div className="img-section">
                 <motion.img
-                src="/me_transparent.png"
+                src="/me.jpg"
                 alt="ludde"
                 initial={{ y: 0 }}
                 animate={{ y: [-20, 20, -20] }}

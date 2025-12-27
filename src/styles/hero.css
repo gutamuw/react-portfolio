@@ -80,8 +80,8 @@
   -webkit-filter: blur(80px);
 }
 
-@supports (-webkit-backdrop-filter: none) and (not (backdrop-filter: none)) {
+@supports (-webkit-hyphens: none) {
   .background svg {
-    display: none;
+    display: none !important;
   }
 }
