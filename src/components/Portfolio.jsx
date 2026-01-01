@@ -2,9 +2,18 @@ import { motion } from "framer-motion";
 import "../styles/portfolio.css";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJs, faWordpress, faPhp, faHtml5, faCss3, faNodeJs, faReact, faSass} from "@fortawesome/free-brands-svg-icons";
+import {
+  faJs,
+  faWordpress,
+  faPhp,
+  faHtml5,
+  faCss3,
+  faNodeJs,
+  faReact,
+  faSass,
+  faCloudflare,
+} from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-
 
 function Portfolio() {
   return (
@@ -17,43 +26,26 @@ function Portfolio() {
           code.
         </p>
       </div>
-      <motion.div 
+      <motion.div
         className="portfolio-cards"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 200, duration: 1, delay: 0.5 }}
       >
-        <Card 
-          title={"Älvkarleby"}
+        <Card
+          title={"Planeringsverktyget"}
           techUsed={[
-            <FontAwesomeIcon icon={faPhp} />,
-            <FontAwesomeIcon icon={faJs} />,
             <FontAwesomeIcon icon={faWordpress} />,
+            <FontAwesomeIcon icon={faPhp} />,
+            <FontAwesomeIcon icon={faReact} />,
+            <FontAwesomeIcon icon={faJs} />,
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
-            
           ]}
-          description={"Website project"}
-          imageUrl={"/alvkarleby-screenshot.png"}
-          link={"https://www.alvkarlebybegravningsbyra.se/"}
+          description={"Wordpress plugin"}
+          imageUrl={"/bo_client_screenshot.png"}
+          link={"https://github.com/gutamuw/my-react-plugin"}
           category={"Work"}
-        />
-
-        <Card 
-        title={"Livsarkivet.se"}
-        techUsed={[
-          <FontAwesomeIcon icon={faPhp} />,
-          <FontAwesomeIcon icon={faJs} />,
-          <FontAwesomeIcon icon={faWordpress} />,
-          <FontAwesomeIcon icon={faHtml5} />,
-          <FontAwesomeIcon icon={faCss3} />,
-          
-        ]}
-        description={"Website project"}
-        imageUrl={"/livsarkivet.png"}
-        link={"https://www.livsarkivet.se/"}
-        category={"Work"}
-        
         />
 
         <Card
@@ -68,6 +60,53 @@ function Portfolio() {
           link={"https://elagent.com/"}
           category={"Freelance"}
         />
+
+        <Card
+          title={"Seagrid single sign-on"}
+          techUsed={[
+            <FontAwesomeIcon icon={faWordpress} />,
+            <FontAwesomeIcon icon={faPhp} />,
+            <FontAwesomeIcon icon={faJs} />,
+            <FontAwesomeIcon icon={faHtml5} />,
+            <FontAwesomeIcon icon={faCss3} />,
+            <FontAwesomeIcon icon={faCloudflare} />,
+          ]}
+          description={"Firebase authentication plugin"}
+          imageUrl={"/seagrid_sso.jpg"}
+          link={"https://www.seagrid.se/app-login/  "}
+          category={"Internship"}
+        />
+
+        <Card
+          title={"Livsarkivet.se"}
+          techUsed={[
+            <FontAwesomeIcon icon={faPhp} />,
+            <FontAwesomeIcon icon={faJs} />,
+            <FontAwesomeIcon icon={faWordpress} />,
+            <FontAwesomeIcon icon={faHtml5} />,
+            <FontAwesomeIcon icon={faCss3} />,
+          ]}
+          description={"Website project"}
+          imageUrl={"/livsarkivet.png"}
+          link={"https://www.livsarkivet.se/"}
+          category={"Work"}
+        />
+
+        <Card
+          title={"Älvkarleby"}
+          techUsed={[
+            <FontAwesomeIcon icon={faPhp} />,
+            <FontAwesomeIcon icon={faJs} />,
+            <FontAwesomeIcon icon={faWordpress} />,
+            <FontAwesomeIcon icon={faHtml5} />,
+            <FontAwesomeIcon icon={faCss3} />,
+          ]}
+          description={"Website project"}
+          imageUrl={"/alvkarleby-screenshot.png"}
+          link={"https://www.alvkarlebybegravningsbyra.se/"}
+          category={"Work"}
+        />
+
         <Card
           title={"Sandstedts.se"}
           techUsed={[
@@ -76,7 +115,6 @@ function Portfolio() {
             <FontAwesomeIcon icon={faWordpress} />,
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
-            
           ]}
           description={"Website project"}
           imageUrl={"/sandstedts-screenshot.png"}
@@ -89,13 +127,26 @@ function Portfolio() {
             <FontAwesomeIcon icon={faWordpress} />,
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
-            
           ]}
           description={"Website project"}
           imageUrl={"/roger-screenshot.png"}
           link={"https://rogerelverskog.se/"}
           category={"Freelance"}
         />
+
+        <Card
+          title="Superbgroup.se"
+          techUsed={[
+            <FontAwesomeIcon icon={faWordpress} />,
+            <FontAwesomeIcon icon={faHtml5} />,
+            <FontAwesomeIcon icon={faCss3} />,
+          ]}
+          description="Website project"
+          imageUrl="/superb_screenshot.png"
+          link="https://superbgroup.se/"
+          category="Freelance"
+        />
+
         <Card
           title={"Profile gallery"}
           techUsed={[
@@ -103,7 +154,6 @@ function Portfolio() {
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
             <FontAwesomeIcon icon={faNodeJs} />,
-            
           ]}
           description={"Fetch API"}
           imageUrl={"/profile-gallery-screenshot.JPG"}
@@ -144,14 +194,13 @@ function Portfolio() {
             <FontAwesomeIcon icon={faWordpress} />,
             <FontAwesomeIcon icon={faHtml5} />,
             <FontAwesomeIcon icon={faCss3} />,
-            
           ]}
           description={"Website project"}
           imageUrl={"/halldoffs-screenshot.png"}
           link={"https://www.halldoffs.se/"}
           category={"Work"}
         />
-      <Card
+        <Card
           title={"What Todo"}
           techUsed={[
             <FontAwesomeIcon icon={faReact} />,
@@ -164,7 +213,6 @@ function Portfolio() {
           category={"Personal"}
         />
       </motion.div>
-      
     </div>
   );
 }
