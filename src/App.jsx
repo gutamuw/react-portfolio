@@ -11,6 +11,7 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import Portfolio from "./components/Portfolio.jsx";
 import Contact from "./components/Contact.jsx";
+import GridBackground from "./components/AnimatedBackground.jsx";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -78,6 +79,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <Router>
+      <GridBackground />
       <Header />
       <AnimatedRoutes />
     </Router>
