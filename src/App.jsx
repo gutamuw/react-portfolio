@@ -1,12 +1,16 @@
-import './App.css'
-import AboutSection from './components/AboutSection.jsx'
-import AnimatedBackground from './components/AnimatedBackground.jsx'
-import Header from './components/Header.jsx'
-import HeroSection from './components/HeroSection.jsx'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
-import Portfolio from './components/Portfolio.jsx'
-import Contact from './components/Contact.jsx'
+import "./App.css";
+import AboutSection from "./components/AboutSection.jsx";
+import Header from "./components/Header.jsx";
+import HeroSection from "./components/HeroSection.jsx";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
+import Portfolio from "./components/Portfolio.jsx";
+import Contact from "./components/Contact.jsx";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -62,7 +66,7 @@ function AnimatedRoutes() {
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.5 }}
             >
-              <Contact/>
+              <Contact />
             </motion.div>
           }
         />
@@ -74,7 +78,6 @@ function AnimatedRoutes() {
 function App() {
   return (
     <Router>
-      <AnimatedBackground />
       <Header />
       <AnimatedRoutes />
     </Router>

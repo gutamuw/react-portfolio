@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+/*import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 function AnimatedBackground() {
@@ -51,4 +51,4 @@ function AnimatedBackground() {
   );
 }
 
-export default AnimatedBackground;
+export default AnimatedBackground;*/
