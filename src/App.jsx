@@ -9,7 +9,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import Portfolio from "./components/Portfolio.jsx";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Contact from "./components/Contact.jsx";
 import GridBackground from "./components/AnimatedBackground.jsx";
 

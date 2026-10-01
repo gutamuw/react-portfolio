@@ -12,16 +12,21 @@ import { Link } from "react-router-dom";
 function HeroSection() {
   return (
     <div className="hero-section">
-      <div
-        className="hero-content"
-      >
-        <motion.h3 
-        initial={{ opacity: 0, x: -40 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ type: "spring", stiffness: 200, duration: 1, delay: 1.5 }}>
-        Ludvig Elverskog</motion.h3>
+      <div className="hero-content">
+        <motion.h3
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 200,
+            duration: 1,
+            delay: 1.5,
+          }}
+        >
+          Ludvig Elverskog
+        </motion.h3>
         <h1>
-          {Array.from("FRONTEND/UX").map((letter, index) => (
+          {Array.from("FULLSTACK/UX").map((letter, index) => (
             <motion.span
               key={index}
               style={{ display: "inline-block", cursoer: "pointer" }}
@@ -58,7 +63,11 @@ function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 200, duration: 1, delay: 2 }}
       >
-        <a href="https://github.com/gutamuw" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/gutamuw"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a
@@ -77,14 +86,19 @@ function HeroSection() {
         </a>
       </motion.div>
       <Link to="/about">
-      <motion.div
-        className="scroll-down"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ type: "spring", stiffness: 200, duration: 1, delay: 2.5 }}
-      >
-        <FontAwesomeIcon icon={faChevronRight} />
-      </motion.div>
+        <motion.div
+          className="scroll-down"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            type: "spring",
+            stiffness: 200,
+            duration: 1,
+            delay: 2.5,
+          }}
+        >
+          <FontAwesomeIcon icon={faChevronRight} />
+        </motion.div>
       </Link>
     </div>
   );

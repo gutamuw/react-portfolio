@@ -11,6 +11,7 @@ import {
   faWordpress,
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
+import { SiMongodb, SiTypescript } from "react-icons/si";
 
 function AboutSection() {
   return (
@@ -37,15 +38,16 @@ function AboutSection() {
           </h1>
           <motion.div>
             <p>
-              I am a passionate frontend developer with a keen interest in
-              creating user-friendly and visually appealing web applications. My
-              goal is to deliver high-quality code and enhance user experiences
-              through innovative design and functionality.
+              I'm a fullstack developer focused on building modern web and
+              mobile applications with React and React Native. I work across the
+              stack with Node.js, ElysiaJS, Express, and MongoDB, with a strong
+              focus on creating great user experiences.
             </p>
             <p>
-              With a strong foundation in HTML, CSS, and JavaScript, I am always
-              eager to learn new technologies and frameworks to stay up-to-date
-              with the latest trends in web development.
+              I started out with WordPress, PHP, and JavaScript before moving
+              into the React ecosystem and app development. These days I'm
+              exploring headless WordPress and Astro, while continuing to build
+              and work across both frontend and backend.
             </p>
           </motion.div>
         </div>
@@ -65,14 +67,18 @@ function AboutSection() {
             <li>HTML</li>
             <li>CSS/SCSS</li>
             <li>JavaScript</li>
+            <li>TypeScript</li>
             <li>React</li>
             <li>React Native</li>
             <li>PHP</li>
             <li>Express.js</li>
+            <li>Node</li>
+            <li>Elysia</li>
             <li>MongoDB</li>
             <li>Wordpress</li>
             <li>Responsive Design</li>
-            <li>Version Control (Git)</li>
+            <li>Github</li>
+            <li>CI/CD</li>
           </ul>
         </motion.div>
         <motion.div
@@ -140,6 +146,12 @@ function AboutSection() {
               </Slider.Slide>
               <Slider.Slide>
                 <FontAwesomeIcon icon={faNodeJs} title="Node.js" size="3x" />
+              </Slider.Slide>
+              <Slider.Slide>
+                <SiMongodb size={"40px"} />
+              </Slider.Slide>
+              <Slider.Slide>
+                <SiTypescript size={"40px"} />
               </Slider.Slide>
             </Slider>
           </div>
