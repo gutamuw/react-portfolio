@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import "../../styles/portfolio.css";
 import Card from "../Card";
-import { allPortfolioData } from "./constants";
+import { allPortfolioData, categories } from "./constants";
 import { useState } from "react";
 
 function Portfolio() {
@@ -13,22 +13,22 @@ function Portfolio() {
 
   const projects = currentFilter ? filteredProjects : allPortfolioData;
 
-  const categories = [
+  const filterOptions = [
     {
-      category: "Work",
-      filter: "Work",
+      category: categories.WORK,
+      filter: categories.WORK,
     },
     {
-      category: "Freelance",
-      filter: "Freelance",
+      category: categories.FREELANCE,
+      filter: categories.FREELANCE,
     },
     {
-      category: "Internship",
-      filter: "Internship",
+      category: categories.INTERNSHIP,
+      filter: categories.INTERNSHIP,
     },
     {
-      category: "Personal",
-      filter: "Personal",
+      category: categories.PERSONAL,
+      filter: categories.PERSONAL,
     },
     {
       category: "All",
@@ -48,7 +48,7 @@ function Portfolio() {
       </div>
 
       <div className="segmented-controls">
-        {categories.map((category, i) => (
+        {filterOptions.map((category, i) => (
           <div
             key={i}
             className={

@@ -12,11 +12,19 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
+  SiExpress,
   SiMongodb,
   SiNestjs,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+
+export const categories = {
+  WORK: "Work",
+  PERSONAL: "Personal",
+  INTERNSHIP: "Internship",
+  FREELANCE: "Freelance",
+};
 
 export const allPortfolioData = [
   {
@@ -24,7 +32,7 @@ export const allPortfolioData = [
     description: "React native app",
     imageUrl: "/seagrid-app.png",
     link: "https://play.google.com/store/apps/details?id=se.seagrid",
-    category: "Work",
+    category: categories.WORK,
     techUsed: [
       <FontAwesomeIcon icon={faReact} />,
       <SiTypescript />,
@@ -38,7 +46,7 @@ export const allPortfolioData = [
     description: "Wordpress plugin",
     imageUrl: "/planeringsverktyget.png",
     link: "https://github.com/gutamuw/my-react-plugin",
-    category: "Work",
+    category: categories.WORK,
     techUsed: [
       <FontAwesomeIcon icon={faWordpress} />,
       <FontAwesomeIcon icon={faPhp} />,
@@ -53,7 +61,7 @@ export const allPortfolioData = [
     description: "Map search feature",
     imageUrl: "/begravningarse.png",
     link: "https://www.begravningar.se/",
-    category: "Freelance",
+    category: categories.FREELANCE,
     techUsed: [
       <FontAwesomeIcon icon={faWordpress} />,
       <FontAwesomeIcon icon={faPhp} />,
@@ -67,7 +75,7 @@ export const allPortfolioData = [
     description: "Website project & SEO",
     imageUrl: "/elagent-screenshot.png",
     link: "https://elagent.com/",
-    category: "Freelance",
+    category: categories.FREELANCE,
     techUsed: [
       <FontAwesomeIcon icon={faWordpress} />,
       <FontAwesomeIcon icon={faHtml5} />,
@@ -79,7 +87,7 @@ export const allPortfolioData = [
     description: "Firebase authentication plugin",
     imageUrl: "/seagrid_sso.jpg",
     link: "https://www.seagrid.se/app-login/  ",
-    category: "Internship",
+    category: categories.INTERNSHIP,
     techUsed: [
       <FontAwesomeIcon icon={faWordpress} />,
       <FontAwesomeIcon icon={faPhp} />,
@@ -94,7 +102,7 @@ export const allPortfolioData = [
     description: "Website project",
     imageUrl: "/livsarkivet.png",
     link: "https://www.livsarkivet.se/",
-    category: "Work",
+    category: categories.WORK,
     techUsed: [
       <FontAwesomeIcon icon={faPhp} />,
       <FontAwesomeIcon icon={faJs} />,
@@ -104,11 +112,25 @@ export const allPortfolioData = [
     ],
   },
   {
+    title: "Room Booker",
+    description: "Fullstack React Native App",
+    imageUrl: "/room-booker.jfif",
+    link: "https://github.com/gutamuw/room-booker",
+    category: categories.PERSONAL,
+    techUsed: [
+      <FontAwesomeIcon icon={faReact} />,
+      <SiTypescript />,
+      <FontAwesomeIcon icon={faCss3} />,
+      <SiMongodb />,
+      <SiExpress />,
+    ],
+  },
+  {
     title: "Älvkarleby",
     description: "Website project",
     imageUrl: "/alvkarleby-screenshot.png",
     link: "https://www.alvkarlebybegravningsbyra.se/",
-    category: "Work",
+    category: categories.WORK,
     techUsed: [
       <FontAwesomeIcon icon={faPhp} />,
       <FontAwesomeIcon icon={faJs} />,
@@ -122,7 +144,7 @@ export const allPortfolioData = [
     description: "Website project",
     imageUrl: "/sandstedts-screenshot.png",
     link: "https://www.sandstedt.se/",
-    category: "Work",
+    category: categories.WORK,
     techUsed: [
       <FontAwesomeIcon icon={faPhp} />,
       <FontAwesomeIcon icon={faJs} />,
@@ -136,7 +158,7 @@ export const allPortfolioData = [
     description: "Website project",
     imageUrl: "/roger-screenshot.png",
     link: "https://rogerelverskog.se/",
-    category: "Freelance",
+    category: categories.FREELANCE,
     techUsed: [
       <FontAwesomeIcon icon={faWordpress} />,
       <FontAwesomeIcon icon={faHtml5} />,
@@ -148,7 +170,7 @@ export const allPortfolioData = [
     description: "Website project",
     imageUrl: "/superb_screenshot.png",
     link: "https://superbgroup.se/",
-    category: "Freelance",
+    category: categories.FREELANCE,
     techUsed: [
       <FontAwesomeIcon icon={faWordpress} />,
       <FontAwesomeIcon icon={faHtml5} />,
@@ -160,7 +182,7 @@ export const allPortfolioData = [
     description: "API & WebSocket",
     imageUrl: "/theChat-screenshot.JPG",
     link: "https://github.com/gutamuw/theChat",
-    category: "Personal",
+    category: categories.PERSONAL,
     techUsed: [
       <FontAwesomeIcon icon={faJs} />,
       <FontAwesomeIcon icon={faHtml5} />,
@@ -174,7 +196,7 @@ export const allPortfolioData = [
     description: "React, API & Framer Motion",
     imageUrl: "/djurappen.JPG",
     link: "https://github.com/gutamuw/animalFeeder",
-    category: "Personal",
+    category: categories.PERSONAL,
     techUsed: [
       <FontAwesomeIcon icon={faReact} />,
       <FontAwesomeIcon icon={faHtml5} />,
@@ -186,7 +208,7 @@ export const allPortfolioData = [
     description: "Website project",
     imageUrl: "/halldoffs-screenshot.png",
     link: "https://www.halldoffs.se/",
-    category: "Work",
+    category: categories.WORK,
     techUsed: [
       <FontAwesomeIcon icon={faPhp} />,
       <FontAwesomeIcon icon={faJs} />,
