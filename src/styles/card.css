@@ -6,7 +6,7 @@
   transition: transform 0.2s;
   cursor: pointer;
   width: 100%;
-  max-width: 300px;
+  /*max-width: 300px;*/
   color: var(--white);
   overflow: hidden;
 }
@@ -35,10 +35,8 @@ p {
 
 .card a {
   position: absolute;
-  top: 0.5rem;
-  left: 8.1rem;
-  height: 100%;
-  width: 100%;
+  top: 1rem;
+  right: 1rem;
 }
 
 .card a svg {

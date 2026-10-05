@@ -1,10 +1,9 @@
 .portfolio-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-  justify-content: center;
   align-items: center;
-  max-width: 970px;
+  width: 100%;
 }
 
 .portfolio-section h1 {
@@ -19,12 +18,57 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  max-width: 1155px;
+  margin: 0 auto;
   padding: 8rem 2rem 2rem;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 900px) {
+  .portfolio-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .wrapper h1 {
   font-size: clamp(2rem, 5vw, 8rem);
+}
+
+.segmented-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.4rem;
+  border: 1px solid #ffffff20;
+  border-radius: 45px;
+  background-color: var(--black-transparent);
+}
+
+.segmented-controls > div {
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 45px;
+  color: var(--white-transparent);
+  transition:
+    color 0.2s,
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+.segmented-controls > div:hover {
+  color: var(--white);
+  border-color: #ffffff20;
+}
+
+.segmented-controls > div.active {
+  color: var(--white);
+  border-color: var(--green);
+  background-color: var(--green-transparent);
 }
